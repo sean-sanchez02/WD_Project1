@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tweeter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+                <img src="images/twitterbird.jpg" alt="Tweeter Logo" width="30" height="30">
+        </div>
+        <div class="title">Tweeter</div>
+    </nav>
+
+    <main class="container">
+
+        <div class="tweet-box">
+
+            <section class="new-tweet">
+                <div class="profile-pic"></div>
+                <div class="new-tweet-right">
+                    <textarea id="tweetInput" placeholder="What's happening?"></textarea>
+                    <div class="tweet-controls">
+                        <label id="charCount">160 characters remaining</label>
+                        <button id="tweetBtn" disabled>tweeet</button>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="divider">
+
+            <section class="tweet">
+                <div class="tweet-header">
+                    <div class="profile-pic"></div>
+                    <div class="tweet-header-right">
+                        <div>
+                            <strong>Sean Sanchez</strong>
+                            <span class="main-user">@seans - 10hr</span>
+                        </div>
+                        <div class="tweet-body">
+                            This is just a static post for testing purposes.
+                        </div>
+                        <div class="tweet-footer">
+                            <button class="iconBtn"><i class="far fa-comment"></i> 3</button>
+                            <button class="iconBtn"><i class="fas fa-retweet"></i></button>
+                            <button class="iconBtn"><i class="far fa-heart"></i> 26</button>
+                            <button class="iconBtn"><i class="fas fa-arrow-up-from-bracket"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
